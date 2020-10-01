@@ -39,7 +39,7 @@
 </svelte:head>
 
 <div>
-    <img src="shield-letter-s-logo_8586-82.jpg" alt="image logo">
+    <img src="shield-letter-s-logo_8586-82.jpg" alt="flogo">
     <h1>Simple page</h1>
     <p>Find your next assignment right here.</p>
     <a class="btn" href="jobs">View jobs</a>

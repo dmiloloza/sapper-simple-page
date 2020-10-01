@@ -9,7 +9,7 @@
 	main {
 		position: relative;
 		max-width: 960px;
-		padding: 60px 180px;
+		padding: 60px 10px;
 		margin: 0 auto;
 	}
 </style>
