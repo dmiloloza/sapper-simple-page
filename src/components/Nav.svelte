@@ -10,7 +10,7 @@
     }
     nav div{
         max-width: 960px;
-        padding: 0 10px;
+        padding: 0 0;
         margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -42,7 +42,7 @@
 
 <nav>
     <div>
-        <h1 on:slick={console.log(segment)}>Simple page</h1>
+        <h1 on:click={console.log(segment)}>Simple page</h1>
         <ul>
             <li><a class:current={segment === undefined} href=".">home</a></li>
             <li><a class:current={segment === 'about'} href="about">about</a></li>
