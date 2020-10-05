@@ -11,7 +11,9 @@
 
 <script>
     export let job;
-    console.log(job);
 </script>
 
-
+<div class="job">
+    <h2><strong>{job.title}</strong></h2>
+    <p> Salary of €{job.salary}</p>
+</div>
