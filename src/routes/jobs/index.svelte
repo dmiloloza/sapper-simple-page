@@ -45,7 +45,7 @@
 <ul>
     {#each jobs as job}
         <li>
-            <a href="/">{job.title}</a>
+            <a href={`jobs/${job.id}`}>{job.title}</a>
         </li>
     {/each}
 </ul>
