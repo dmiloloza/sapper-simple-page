@@ -1,10 +1,15 @@
-import { jobs } from './_data';
+import {jobs} from './_data';
 
-export function get (req, res) {
+export function get(req, res) {
     const {id} = req.params;
 
-    const job = jobs.find( job => job.id === id)
+    const job = jobs.find(job => job.id === id)
 
-    res.setHeader('Content-Type' , 'application/json');
-    res.end(JSON.stringify(job));
+    if (job) {
+        res.setHeader('Content-Type', 'application/json');
+        res.end(JSON.stringify(job));
+    } else {
+        res.statusCode = 404;
+        res.end(JSON.stringify({error:'That job does not exist!'}))
+    }
 }
