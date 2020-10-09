@@ -4,6 +4,8 @@
     let title;
     let salary;
     let details;
+    let emailLogin = false;
+    let inputEl;
 
     let handleSubmit = async () => {
         title = inputEl.value
@@ -17,13 +19,9 @@
         goto('jobs')
     }
 
-    let emailLogin = false;
-    let inputEl;
-
     let handleClick = () => {
         console.log(inputEl.type, inputEl.value);
         inputEl.type = inputEl.type === 'password' ? 'text' : 'password';
-
     }
 </script>
 
